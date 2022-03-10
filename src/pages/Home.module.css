@@ -1,0 +1,148 @@
+@font-face {
+    font-family:"AvenirNext";
+    src: url(./../assets/fonts/AvenirNextLTPro-Bold.otf);
+  }
+  @font-face {
+    font-family:"Avenir";
+    src: url(./../assets/fonts/AvenirLTStd-Book.otf);
+  }
+
+h1,h2,h3{
+    color: #121826;
+    font-family:"AvenirNext";
+
+}  
+p, button{
+    color:#4B5563;
+    line-height: 28px;
+    font-family:"Avenir";
+
+}
+
+
+.welcome{
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.header{
+    font-size: 64px;
+    font-family:"AvenirNext";
+    margin-bottom: 24px;
+}
+.slogan{
+    margin: 0px;
+    font-size: 18px;
+    font-family:"Avenir";
+    margin-bottom: 32px;
+    line-height: 32px;
+}
+.buttonPrimary{
+    background-color: #4966F6;
+    height: 40px;
+    min-width: 180px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.preview{
+    margin-top: 48px;
+}
+.services{
+    padding: 80px 10%;
+}
+.titles{
+    font-size: 48px;
+    color: #121826;
+    text-align: center;
+}
+.text{
+    font-size: 18px; 
+    text-align: center;
+}
+.servicesBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.serviceImg{
+    width: 100%;
+    height: 300px;
+    background-color: #F2F2F2;
+    margin-top: 48px;
+}
+.serviceCard{
+    width: 320px;
+    flex-grow: 1;
+    margin: 0 16px;
+}
+.serviceCard h2{
+    font-size: 18px;
+}
+.why{
+    background-color: #FAFBFE;
+    padding: 80px 10%;
+}
+.whyBox{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.advantages{
+    width: 500px;
+    flex-grow: 1;
+    padding: 0 80px 0 0;
+}
+.advantages li{
+    color:#4B5563;
+    line-height: 28px;
+    font-family:"Avenir";
+    font-size: 18px;
+    margin: 12px 0;
+}
+.whyImg{
+    width: 500px;
+    flex-grow: 1;
+
+}
+.whyImg img{
+    width: 90%;
+}
+
+.steps{
+    padding: 80px 10% 120px 10%;
+}
+.cardStep{
+    width: 270px;
+    border-radius: 16px;
+    border: 1px solid #E6E6EB;
+    padding: 24px;
+    box-shadow: 0px 4px 8px 0px rgba(5, 0, 56, 0.05);
+
+}
+.cardStep h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Avenir" !important;
+}
+.cardStep img{
+    float: right;
+}
+.steper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+.txt{
+    font-size: 24px;
+    color: #121826;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 54px;
+}
