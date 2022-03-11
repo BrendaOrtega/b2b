@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styles from "./Home.module.css";
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 
 const preview = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2FPreview.png?alt=media&token=c96880d5-b9a6-46b9-9ddb-27720f592539"
@@ -20,7 +19,7 @@ export default function HomePage() {
     return (
         <section className={styles.home}>
             <section className={styles.welcome}>
-                <Zoom >
+                <Fade bottom >
                     <h1 className={styles.header}>El socio perfecto para conocer a tus consumidores</h1>
                     <p className={styles.slogan}>Creamos una experiencia humana y diferente de la investigación de mercado en línea, reclutando y perfilando usuarios con base en los requerimientos de tu estudio para asegurar resultados de calidad.</p>
 
@@ -29,32 +28,7 @@ export default function HomePage() {
                     <br />
 
                     <img className={styles.preview} src={preview} alt="gif app" />
-                </Zoom>
-            </section>
-            <section className={styles.services}>
-                <Fade bottom>
-                    <h2 className={styles.titles}>Nuestras soluciones</h2>
-                    <p className={styles.text}>Somos la mejor comunidad de incentivos para responder encuestas al preocuparnos no solo por las respuestas, sino por crear una experiencia única para que nuestros panelistas compartan sus opiniones. Como resultado, aseguramos un alto índice de respuesta y calidad en los siguientes servicios</p>
                 </Fade>
-                <div className={styles.servicesBox}>
-                    <Fade bottom>
-                        <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
-                            <h2>Servicio de Diseño de Encuestas</h2>
-                            <p>Trabajamos en el diseño y configuración de tu encuesta para optimizar la obtención de resultados. </p>
-                        </div>
-                        <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
-                            <h2>Panel VIP</h2>
-                            <p>Perfilamos a los usuarios para tu proyecto, ejecutamos la encuesta y te entregamos toda la información procesada en el formato que necesites. </p>
-                        </div>
-                        <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
-                            <h2>Panel dedicado</h2>
-                            <p>¿Cuentas con una base de usuarios? Gestionamos a tus usuarios en nuestro sistema para tu proyecto.</p>
-                        </div>
-                    </Fade>
-                </div>
             </section>
             <section className={styles.services}>
                 <Fade bottom>
