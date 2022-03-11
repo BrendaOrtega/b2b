@@ -1,4 +1,4 @@
-import Footer from './footer/Footer';
+import Footer from './pages/footer/Footer';
 import Nav from './Nav/Nav';
 import Routes from './Routes';
 

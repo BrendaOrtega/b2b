@@ -10,7 +10,6 @@
 h1,h2,h3{
     color: #121826;
     font-family:"AvenirNext";
-
 }  
 p, button{
     color:#4B5563;
@@ -18,15 +17,12 @@ p, button{
     font-family:"Avenir";
 
 }
-
-
 .welcome{
     text-align: center;
     width: 73%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 160px;
 }
-
 .header{
     font-size: 64px;
     font-family:"AvenirNext";
@@ -45,13 +41,14 @@ p, button{
     min-width: 180px;
     color: white;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     border: none;
     border-radius: 20px;
     font-size: 16px;
 }
 .preview{
     margin-top: 48px;
+    width: 90%;
 }
 .services{
     padding: 80px 10%;
@@ -91,6 +88,7 @@ p, button{
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .advantages{
@@ -108,10 +106,10 @@ p, button{
 .whyImg{
     width: 500px;
     flex-grow: 1;
-
 }
 .whyImg img{
     width: 90%;
+    margin: 0 5%
 }
 
 .steps{
@@ -145,4 +143,78 @@ p, button{
     font-weight: bolder;
     text-align: center;
     margin-top: 54px;
+}
+
+@media(max-width: 1240px){ 
+    .cardStep{
+        width: 240px;
+    }  
+}
+
+@media(max-width: 1024px){ 
+    .advantages{
+        padding: 0px;
+    }
+    .whyImg img{
+        width: 60%;
+        margin: 0 20%
+    }
+    .cardStep{
+        margin: 12px 0px;
+    }  
+    .steper{
+        justify-content: space-around;
+    }  
+    
+    
+}
+
+@media(max-width: 900px){ 
+    .cardStep{
+        margin: 12px;
+    }  
+    .cardStep{
+        width: 240px;    
+    }
+}
+@media(max-width: 600px){ 
+    .welcome{
+        width: 90%;
+    }
+    .header{
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+    .slogan{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .serviceCard{
+        margin: 0;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .serviceCard h2{
+        font-size: 16px;
+    }
+    .advantages li{
+        font-size: 16px;
+    }
+    .welcome{
+        padding-top: 120px;
+    }
+    .titles{
+        font-size: 24px;
+    }
+    .steps{
+        padding: 40px 10% 80px 10%;
+ 
+    }
+    .why{
+        padding: 40px 10%;
+    }
+    .serviceImg{
+        height: 200px;
+    }
 }
