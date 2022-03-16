@@ -74,5 +74,8 @@
     .footerBox{
         flex-wrap: wrap;
     }
+    .footerBox{
+        padding: 40px 5% 32px 5%;
+    }
     
 }

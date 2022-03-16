@@ -10,7 +10,7 @@ class Nav extends Component {
         return (
             <section className={styles.nav}>
                 <Link to="/">
-                    <img src={logo} />
+                    <img src={logo} alt="logo"/>
                 </Link>
                 <div>
 
