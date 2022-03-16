@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styles from "./Home.module.css";
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 
 const preview = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2FPreview.png?alt=media&token=c96880d5-b9a6-46b9-9ddb-27720f592539"
@@ -18,12 +19,15 @@ export default function HomePage() {
     }, [])
     return (
         <section className={styles.home}>
+            <title>SurveyUp</title>
+
             <section className={styles.welcome}>
                 <Fade bottom >
                     <h1 className={styles.header}>El socio perfecto para conocer a tus consumidores</h1>
                     <p className={styles.slogan}>Creamos una experiencia humana y diferente de la investigación de mercado en línea, reclutando y perfilando usuarios con base en los requerimientos de tu estudio para asegurar resultados de calidad.</p>
-
-                    <button className={styles.buttonPrimary}>Contactar</button>
+                    <Link to="/contacto">
+                        <button className={styles.buttonPrimary}>Contactar</button>
+                    </Link>
 
                     <br />
 
@@ -113,7 +117,10 @@ export default function HomePage() {
                 <div style={{ textAlign: "center" }}>
                     <Fade bottom>
                         <p className={styles.txt}>¿Trabajamos juntos tu próximo proyecto?</p>
-                        <button className={styles.buttonPrimary}>Contactar</button>
+                        <Link to="/contacto">
+                            <button className={styles.buttonPrimary}>Contactar</button>
+                        </Link>
+
                     </Fade>
                 </div>
 

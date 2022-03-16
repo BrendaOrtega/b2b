@@ -25,7 +25,7 @@ class Footer extends Component {
                         <Link to="/contacto">
                             <p>Contacto</p>
                         </Link>
-                        <Link to="/preguntas-preguentes">
+                        <Link to="/preguntas-frecuentes">
                             <p>Preguntas frecuentes</p>
                         </Link>
                         <Link to="/aviso-de-privacidad">

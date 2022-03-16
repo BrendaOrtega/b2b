@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import styles from "./Contacto.module.css"
 import Fade from 'react-reveal/Fade';
 
-const plus = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2Ficons8-plus-math%201.svg?alt=media&token=df838686-e625-4d90-9bd2-7a9300642ee8"
-
 export default function Contacto() {
     useEffect(() => {
         window.scrollTo({
@@ -14,21 +12,36 @@ export default function Contacto() {
     }, [])
     return (
         <section className={styles.contacto}>
+            <title>Contacto</title>
             <Fade>
-                <h2 className={styles.titles}>Preguntas frecuentes</h2>
+                <h2 className={styles.titles}>Contacto</h2>
+                <p>Completa la siguiente información y uno de nuestros asesores se pondrá en contacto contigo lo antes posible.</p>
             </Fade>
-            <Fade>
-                <div className={styles.faq}>
-                    <p>¿Cuál es el precio de un estudio?</p>
-                    <img src={plus} />
+            <div className={styles.form}>
+                <div className={styles.input}>
+                    <label>Nombre*</label>
+                    <input name="Name" />
                 </div>
-            </Fade>
-            <Fade>
-                <div className={styles.faq}>
-                    <p>¿Cuál es el precio de un estudio?</p>
-                    <img src={plus} />
+                <div className={styles.input}>
+                    <label>Empresa</label>
+                    <input name="Email" />
                 </div>
-            </Fade>
+                <div className={styles.input}>
+                    <label>Email*</label>
+                    <input name="Name" />
+                </div>
+                <div className={styles.input}>
+                    <label>Teléfono</label>
+                    <input name="Email" />
+                </div>
+                <div className={styles.textArea}>
+                    <label>Mensaje*</label>
+                    <textarea name="Email" />
+                </div>
+                <button className={styles.buttonPrimary}>Enviar</button>
+            </div>
+
+
         </section>
     )
 }

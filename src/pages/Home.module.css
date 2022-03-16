@@ -45,6 +45,12 @@ p, button{
     border: none;
     border-radius: 20px;
     font-size: 16px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.buttonPrimary:hover{
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+
 }
 .preview{
     margin-top: 48px;

@@ -12,6 +12,7 @@ export default function Aviso() {
     }, [])
     return (
         <section className={styles.aviso}>
+            <title>Aviso de privacidad</title>
             <Fade bottom>
                 <h2 className={styles.titles}>Aviso de privacidad</h2>
                 <p>SurveyUp con domicilio en Jalapa 19, Col. Roma, Alcaldía Cuauhtémoc, CDMX, México y portal de internet www.surveyup.com.mx, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
