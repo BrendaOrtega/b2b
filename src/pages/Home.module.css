@@ -166,6 +166,56 @@ li{
     padding: 160px 10%;
     box-sizing: border-box;
 }
+.wrapper div{
+    padding-top: 16px;
+    margin-top: -24px;
+}
+
+.wrapper{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family:"AvenirNext";
+    margin-bottom: 24px;
+  }
+
+
+    .typer{
+        height: 80px;
+    }
+
+    .typer .word{
+        font-size: 64px;
+        color: #4966F6;
+    }
+
+    .typer .cursor::before{
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    bottom:4px;
+    width: 4px;
+    height: 80px;
+    background: #E8B140;
+    display: inline-block;
+    animation: pulse 1s step-end infinite;
+    }
+
+@keyframes pulse{
+    0%{
+        /* display: none; */
+        /* opacity: 1; */
+        /* visibility: none; */
+        background: orange;
+    }
+    50%{
+        background: transparent;
+        /* opacity: 0; */
+        /* display: inherit; */
+        /* visibility: inherit; */
+    }
+}
 
 @media(max-width: 1240px){ 
     .cardStep{
@@ -242,4 +292,15 @@ li{
     .aviso{
         padding: 120px 10% 80px 10%;
     }
+    .typer .word{
+        font-size: 36px;
+    }
+    .typer .cursor::before{
+        height: 40px;
+        bottom: 0px;
+    }
+    .typer{
+        height: 40px;
+    }
+    
 }
