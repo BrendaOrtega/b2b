@@ -31,7 +31,7 @@
     border: none;
     opacity: .2;
 }
-.footer img{
+.logo{
     width: 180px;
 }
 .disclaimers{
@@ -44,6 +44,13 @@
 .mediaBox{
     display: flex;
     width: 200px;
+   
+}
+.mediaBox a{
+    transition: all .5s ease;
+} 
+.mediaBox a:hover{
+    transform: scale(1.2);
 }
 .media{
     width: 24px;

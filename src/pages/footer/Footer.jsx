@@ -37,10 +37,16 @@ class Footer extends Component {
                 <div className={styles.disclaimers}>
                     <img className={styles.logo} src={logoBlanco} alt="logo" />
                     <div className={styles.mediaBox}>
-                        <img className={styles.media} src={facebook} alt="facebook" />
-                        <img className={styles.media} src={twitter} alt="twitter" />
-                        <img className={styles.media} src={linkedin} alt="linkedin" />
-                        <img className={styles.media} src={instagram} alt="instagram" />
+                        <a href='https://www.facebook.com/surveyup/' rel="noopener noreferrer" target='_blank'>
+                            <img className={styles.media} src={facebook} alt="facebook" />
+                        </a>
+                        <a href='https://twitter.com/SurveyUp_' rel="noopener noreferrer" target='_blank'>
+                            <img className={styles.media} src={twitter} alt="twitter" />
+                        </a>
+                        <a href='https://www.instagram.com/survey_up/' rel="noopener noreferrer" target='_blank'>
+                            <img className={styles.media} src={instagram} alt="instagram" />
+                        </a>
+                        {/* <img className={styles.media} src={linkedin} alt="linkedin" /> */}
                     </div>
                     <p>© 2021 SurveyUp</p>
                 </div>
