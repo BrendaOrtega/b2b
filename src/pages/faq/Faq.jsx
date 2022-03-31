@@ -13,7 +13,9 @@ export default function Faq() {
             behavior: 'smooth'
         });
     }, [])
+    const [open, setOpen] = useState(false)
     return (
+
         <section className={styles.preguntas}>
             <meta
                 name="description"
@@ -29,22 +31,38 @@ export default function Faq() {
             </Fade>
             <Toggle
                 question="¿Cómo funciona SuerveyUp?"
-                answer="Contamos con varios tipos de segmentos, algunos de ellos son: demográfica, geográfica, por industria y algunos más."
+                answer="El proceso es muy simple, nos compartes el brief de investigación de tu proyecto, realizamos el cronograma, para después programar tu encuesta, reclutar o perfilar a los usuarios, y por último sintetizamos y estructuramos los datos en un reporte final en distintos formatos. "
             />
             <Toggle
                 question="¿Qué tipos de perfiles hay en su Panel?"
-                answer="Contamos con varios tipos de segmentos, algunos de ellos son: demográfica, geográfica, por industria y algunos más." />
-            <Toggle
-                question="¿Cómo aseguran la calidad de las respuestas?"
-                answer="Contamos con varios tipos de segmentos, algunos de ellos son: demográfica, geográfica, por industria y algunos más." />
+                answer="Contamos con varios tipos de segmentos, algunos de ellos son: demográfica, geográfica, por industria, profesión, nivel de ingresos y muchos más." />
+            <Fade>
+                <section className={styles.faq} >
+                    <div
+                        onClick={() => setOpen(value => !value)}
+                    >
+                        <p>¿Cómo aseguran la calidad de las respuestas?</p>
+                        {open ? <FiMinus style={{ fontSize: 36 }} /> : <img src={plus} alt="plus icon" />}
+                    </div>
+                    {open && <p className={styles.answer}>
+                        Dentro de nuestros procesos de Supervisión y seguimiento de datos tomamos algunas medidas para asgurar la calidad de las respuestas como:
+                        <ul>
+                            <li>Perfilamiento - Contamos con procesos que nos permiten mantener actualizada la información de nuestros panelistas, así que asignamos tu encuesta solo a panelistas que cumplen el perfil que tu encuesta requiere.</li>
+                            <li>Seguridad en la encuesta - Nuestra IA asegura que quien responda sea el panelista en cuestión siguiendo diversos protocolos de seguridad.</li>
+                            <li>Encuesta - Durante la encuesta realizamos validaciones para asegurar que el panelista este poniendo la atención requerida.</li>
+                        </ul>
+                    </p>}
+                </section>
+            </Fade>
             <Toggle
                 question="¿Qué tipo de programación de encuestas realizan?"
-                answer="Porque no solo es un formulario para obtener respuestas, contamos con validaciones avanzadas. Realizamos desde la más flexible hasta la más compleja encuesta. Algunos tipos de programación que realizamos son maxdiff, conjoint, simulación en general, entre otros." />
-            <Toggle question="¿En cuánto tiempo entregan los resultados de un estudio?"
-                answer="Porque no solo es un formulario para obtener respuestas, contamos con validaciones avanzadas. Realizamos desde la más flexible hasta la más compleja encuesta. Algunos tipos de programación que realizamos son maxdiff, conjoint, simulación en general, entre otros." />
+                answer="Realizamos desde la encuesta más flexible hasta la más compleja. Algunos tipos de programación que realizamos son maxdiff, conjoint, simulación en general, entre otros." />
+            <Toggle
+                question="¿En cuánto tiempo entregan los resultados de un estudio?"
+                answer="El tiempo de entrega varía en función del tipo de proyecto, sin embargo, tenemos un tiempo promedio de 1 mes. Te recomendamos ponerte en contacto con nosotros para revisar tu proyecto y darte une fecha estimada." />
             <Toggle
                 question="¿Cuál es el costo de un estudio?"
-                answer="Porque no solo es un formulario para obtener respuestas, contamos con validaciones avanzadas. Realizamos desde la más flexible hasta la más compleja encuesta. Algunos tipos de programación que realizamos son maxdiff, conjoint, simulación en general, entre otros."
+                answer="Los costos dependen del tipo de proyecto, dependerá de la muestra, la metodología y la complejidad del mismo. Escríbenos a contacto@surveyup.com.mx y obtén una cotización para tu proyecto."
             />
         </section>
     )

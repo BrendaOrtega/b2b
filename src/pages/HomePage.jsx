@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 
 
-const preview = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2FPreview.png?alt=media&token=c96880d5-b9a6-46b9-9ddb-27720f592539"
+const preview = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/demo1%205.gif?alt=media&token=66d2fe6a-d0e5-48ae-853b-ef3861161c17"
 const image = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2Fsurvey.png?alt=media&token=658f67e5-06e1-475e-85e1-5648165c8ef8"
 const arrow = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2Fflecha.svg?alt=media&token=c24560e4-97e0-492f-8572-46c6efae9a4f"
 
@@ -34,8 +34,9 @@ export default function HomePage() {
                     </Link>
 
                     <br />
-
-                    <img className={styles.preview} src={preview} alt="gif app" />
+                    <div className={styles.shadow}>
+                        <img className={styles.preview} src={preview} alt="gif app" />
+                    </div>
                 </Fade>
             </section>
             <section className={styles.services}>

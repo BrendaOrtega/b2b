@@ -10,14 +10,15 @@ class Nav extends Component {
         return (
             <section className={styles.nav}>
                 <Link to="/">
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo" />
                 </Link>
                 <div>
-
                     <Link to="/contacto">
                         <span>Contacto</span>
                     </Link>
-                    <button className={styles.buttonSecondary}>Agendar Demo</button>
+                    <a href="https://calendly.com/rflores_/30min?month=2022-03" rel="noopener noreferrer" target='_blank' >
+                        <button className={styles.buttonSecondary}>Agendar Demo</button>
+                    </a>
                 </div>
             </section>
         );
