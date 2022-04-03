@@ -4,9 +4,12 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 
 
-const preview = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/demo1%205.gif?alt=media&token=66d2fe6a-d0e5-48ae-853b-ef3861161c17"
+const preview = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/giff_100.gif?alt=media&token=51b8dec9-88ef-4683-870b-f04d97991d45"
 const image = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2Fsurvey.png?alt=media&token=658f67e5-06e1-475e-85e1-5648165c8ef8"
 const arrow = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/Images%2Fflecha.svg?alt=media&token=c24560e4-97e0-492f-8572-46c6efae9a4f"
+const service1 = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/servicio1.svg?alt=media&token=edd00ddc-10a0-4ccf-a765-30afb2cffa3f"
+const service2 = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/servicio2.svg?alt=media&token=54d97ee5-ffdc-4dec-baaf-06867bcbd7fe"
+const service3 = "https://firebasestorage.googleapis.com/v0/b/b2b-survey-d48c1.appspot.com/o/servicio3.svg?alt=media&token=1302e9f9-4f41-456c-8aba-a402722e977a"
 
 
 export default function HomePage() {
@@ -34,7 +37,7 @@ export default function HomePage() {
                     </Link>
 
                     <br />
-                    <div className={styles.shadow}>
+                    <div className={styles.shadow} >
                         <img className={styles.preview} src={preview} alt="gif app" />
                     </div>
                 </Fade>
@@ -47,17 +50,17 @@ export default function HomePage() {
                 <div className={styles.servicesBox}>
                     <Fade bottom>
                         <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
-                            <h2>Servicio de Diseño de Encuestas</h2>
+                            <div className={styles.serviceImg} style={{ backgroundImage: `url("${service1}")` }}></div>
+                            <h2>Servicio de Programación Encuestas</h2>
                             <p>Trabajamos en el diseño y configuración de tu encuesta para optimizar la obtención de resultados. </p>
                         </div>
                         <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
+                            <div className={styles.serviceImg} style={{ backgroundImage: `url("${service2}")` }}></div>
                             <h2>Panel VIP</h2>
                             <p>Perfilamos a los usuarios para tu proyecto, ejecutamos la encuesta y te entregamos toda la información procesada en el formato que necesites. </p>
                         </div>
                         <div className={styles.serviceCard}>
-                            <div className={styles.serviceImg}></div>
+                            <div className={styles.serviceImg} style={{ backgroundImage: `url("${service3}")` }}></div>
                             <h2>Panel dedicado</h2>
                             <p>¿Cuentas con una base de usuarios? Gestionamos a tus usuarios en nuestro sistema para tu proyecto.</p>
                         </div>

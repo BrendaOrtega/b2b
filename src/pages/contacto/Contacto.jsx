@@ -70,6 +70,29 @@ export default function Contacto() {
                 </div>
                 <button className={styles.buttonPrimary}>Enviar</button>
             </form> */}
+            <form className={styles.form}  >
+                <div className={styles.input}>
+                    <label>Nombre*</label>
+                    <input name="name" required />
+                </div>
+                <div className={styles.input}>
+                    <label>Empresa</label>
+                    <input type="text" name="company" required />
+                </div>
+                <div className={styles.input}>
+                    <label>Email*</label>
+                    <input placeholder="55 555 55 55" name="email" required />
+                </div>
+                <div className={styles.input}>
+                    <label>Teléfono</label>
+                    <input placeholder="ejemplo@empresa.com" name="phone" required />
+                </div>
+                <div className={styles.textArea}>
+                    <label>Mensaje*</label>
+                    <textarea type="text" placeholder="Escribe un mensaje" name="message" required />
+                </div>
+                <button className={styles.buttonPrimary}>Enviar</button>
+            </form>
 
 
         </section>

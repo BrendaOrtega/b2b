@@ -1,22 +1,25 @@
 @font-face {
-    font-family:"AvenirNext";
+    font-family: "AvenirNext";
     src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
-  }
-  @font-face {
-    font-family:"Avenir";
-    src: url(../../assets/fonts/AvenirLTStd-Book.otf);
-  }
-  @font-face {
-      font-family: "Avenir Medium";
-      src: url("../../assets/fonts/Avenir\ Medium.ttf");
-  }
+}
 
-.contacto{
+@font-face {
+    font-family: "Avenir";
+    src: url(../../assets/fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+    font-family: "Avenir Medium";
+    src: url("../../assets/fonts/Avenir\ Medium.ttf");
+}
+
+.contacto {
     padding: 160px 10% 120px 10%;
     background-color: white;
     text-align: center;
 }
-.form{
+
+.form {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -25,14 +28,14 @@
     justify-content: space-around;
 }
 
-.titles{
+.titles {
     font-size: 48px;
     color: #121826;
     text-align: center;
     margin-bottom: 0px;
 }
 
-.input{
+.input {
     width: 50%;
     padding: 2%;
     box-sizing: border-box;
@@ -42,7 +45,7 @@
     margin-bottom: 32px;
 }
 
-.input input{
+.input input {
     height: 44px;
     border: 1px solid #C8C7D3;
     border-radius: 22px;
@@ -51,13 +54,16 @@
     font-family: "Avenir";
 
 }
-.input label, .textArea label{
+
+.input label,
+.textArea label {
     font-size: 16px;
     font-family: "Avenir Medium";
-    color:#121826;
+    color: #121826;
     margin-bottom: 8px;
 }
-.textArea{
+
+.textArea {
     width: 100%;
     padding: 2%;
     display: flex;
@@ -65,7 +71,8 @@
     text-align: left;
     margin-bottom: 32px;
 }
-.textArea textarea{
+
+.textArea textarea {
     height: 120px;
     border: 1px solid #C8C7D3;
     border-radius: 22px;
@@ -74,15 +81,18 @@
     box-sizing: border-box;
     font-family: "Avenir";
 }
-input::placeholder{
+
+input::placeholder {
     margin-left: 12px;
+    opacity: .5;
 }
 
 input:focus {
-    outline:2px solid #4966F6;
+    outline: 2px solid #4966F6;
     border: none;
 }
-.buttonPrimary{
+
+.buttonPrimary {
     background-color: #4966F6;
     height: 40px;
     min-width: 180px;
@@ -95,39 +105,49 @@ input:focus {
     cursor: pointer;
     transition: all 1s ease;
 }
-.buttonPrimary:hover{
+
+.buttonPrimary:hover {
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
 
 }
-@media(max-width: 1024px){ 
-    .form{
+
+@media(max-width: 1024px) {
+    .form {
         width: 80%;
     }
 }
-@media(max-width: 900px){ 
-    .form{
+
+@media(max-width: 900px) {
+    .form {
         width: 100%;
     }
 }
-@media(max-width: 600px){ 
-    .titles{
+
+@media(max-width: 600px) {
+    .titles {
         font-size: 24px;
     }
-    .contacto{
+
+    .contacto {
         padding: 120px 10% 80px 10%;
     }
-    .input{
+
+    .input {
         width: 100%;
         padding: 2%;
     }
-    .form{
+
+    .form {
         margin-top: 24px;
     }
-    .form label{
+
+    .form label {
         font-size: 14px;
     }
-    .input, .textArea{
+
+    .input,
+    .textArea {
         margin-bottom: 24px;
     }
-    
+
 }
