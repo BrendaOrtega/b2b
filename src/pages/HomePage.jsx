@@ -124,7 +124,7 @@ export default function HomePage() {
                 </div>
                 <div style={{ textAlign: "center" }}>
                     <Fade bottom>
-                        <p className={styles.txt}>¿Trabajamos juntos tu próximo proyecto?</p>
+                        <p className={styles.txt}>¿Trabajamos juntos en tu próximo proyecto?</p>
                         <Link to="/contacto">
                             <button className={styles.buttonPrimary}>Contactar</button>
                         </Link>
