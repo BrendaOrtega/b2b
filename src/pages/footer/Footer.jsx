@@ -36,7 +36,7 @@ class Footer extends Component {
                 <hr />
                 <div className={styles.disclaimers}>
                     <img className={styles.logo} src={logoBlanco} alt="logo" />
-                    <div className={styles.mediaBox}>
+                    {/* <div className={styles.mediaBox}>
                         <a href='https://www.facebook.com/surveyup/' rel="noopener noreferrer" target='_blank'>
                             <img className={styles.media} src={facebook} alt="facebook" />
                         </a>
@@ -46,8 +46,8 @@ class Footer extends Component {
                         <a href='https://www.instagram.com/survey_up/' rel="noopener noreferrer" target='_blank'>
                             <img className={styles.media} src={instagram} alt="instagram" />
                         </a>
-                        {/* <img className={styles.media} src={linkedin} alt="linkedin" /> */}
-                    </div>
+
+                    </div> */}
                     <p>© 2021 SurveyUp</p>
                 </div>
 

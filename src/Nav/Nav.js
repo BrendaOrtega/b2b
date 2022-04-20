@@ -16,9 +16,12 @@ class Nav extends Component {
                     <Link to="/contacto">
                         <span>Contacto</span>
                     </Link>
-                    <a href="https://calendly.com/rflores_/30min?month=2022-03" rel="noopener noreferrer" target='_blank' >
-                        <button className={styles.buttonSecondary}>Agendar Demo</button>
-                    </a>
+                    <Link to="/preguntas-frecuentes">
+                        <span>Preguntas frecuentes</span>
+                    </Link>
+                    {/* <Link to="/contacto">
+                        <button className={styles.buttonSecondary}>Lllama</button>
+                    </Link> */}
                 </div>
             </section>
         );

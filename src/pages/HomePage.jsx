@@ -31,7 +31,7 @@ export default function HomePage() {
                         <div className={styles.staticTxt}></div>
                         <Typer />
                     </div>
-                    <p className={styles.slogan}>Creamos una experiencia humana y diferente de la investigación de mercado en línea, reclutando y perfilando usuarios con base en los requerimientos de tu estudio para asegurar resultados de calidad.</p>
+                    <p className={styles.slogan}>Creamos una experiencia humana y diferente de la investigación de mercado en línea, reclutando y perfilando usuarios con base en los requerimientos de tu estudio para asegurar los mejores resultados.</p>
                     <Link to="/contacto">
                         <button className={styles.buttonPrimary}>Contactar</button>
                     </Link>
@@ -45,14 +45,14 @@ export default function HomePage() {
             <section className={styles.services}>
                 <Fade bottom>
                     <h2 className={styles.titles}>Nuestras soluciones</h2>
-                    <p className={styles.text}>Somos la mejor comunidad de incentivos para responder encuestas al preocuparnos no solo por las respuestas, sino por crear una experiencia única para que nuestros panelistas compartan sus opiniones. Como resultado, aseguramos un alto índice de respuesta y calidad en los siguientes servicios</p>
+                    <p className={styles.text}>Somos la mejor comunidad de incentivos para responder encuestas al preocuparnos no solo por las respuestas en sí, sino por crear una experiencia única para que nuestros panelistas compartan sus opiniones. Como resultado, aseguramos un alto índice de respuesta y calidad en los siguientes servicios</p>
                 </Fade>
                 <div className={styles.servicesBox}>
                     <Fade bottom>
                         <div className={styles.serviceCard}>
                             <div className={styles.serviceImg} style={{ backgroundImage: `url("${service1}")` }}></div>
                             <h2>Servicio de Programación Encuestas</h2>
-                            <p>Trabajamos en el diseño y configuración de tu encuesta para optimizar la obtención de resultados. </p>
+                            <p>Trabajamos en la configuración de tu encuesta para optimizar la obtención de resultados. </p>
                         </div>
                         <div className={styles.serviceCard}>
                             <div className={styles.serviceImg} style={{ backgroundImage: `url("${service2}")` }}></div>
@@ -95,29 +95,29 @@ export default function HomePage() {
                 <div className={styles.steper}>
                     <Fade bottom>
                         <div className={styles.cardStep}>
-                            <h3>Diseño y programación de encuesta</h3>
-                            <p>Programamos tu encuesta y te entregamos la versión Test. Una vez aprobada lanzamos el cuestionario a los panelistas.</p>
+                            <h3>Programación de encuesta</h3>
+                            <p>Programamos tu encuesta y te entregamos una versión de prueba para que puedas revisarla y aprobarla antes de comenzar.</p>
                             <img src={arrow} alt="arrow" />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className={styles.cardStep}>
                             <h3>Perfilamiento de usuarios</h3>
-                            <p>Segmentamos a los panelistas de acuerdo al objetivo de tu proyecto. Enviamos invitaciones de forma paulatina para obtener los mejores resultados. </p>
+                            <p>Reclutamos y segmentamos a los panelistas de acuerdo a la audicencia de tu producto o al objetivo de tu proyecto.</p>
                             <img src={arrow} alt="arrow" />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className={styles.cardStep}>
                             <h3>Supervisión y seguimiento de datos</h3>
-                            <p>Realizamos el control de calidad de la base de datos, revisando estratégicamente las respuestas. Te proporcionamos una base preliminar al inicio del campo. </p>
+                            <p>Realizamos el seguimientos de las respuestas en tiempo real, y generamos estrategias de optimización de audiencia para compartirte resultados preliminares.  </p>
                             <img src={arrow} alt="arrow" />
                         </div>
                     </Fade>
                     <Fade bottom>
                         <div className={styles.cardStep}>
-                            <h3>Sintetización de datos y entrega</h3>
-                            <p>Nuestro sistema genera gráficas las cuales te compartimos con la base de datos en diferentes formatos que elijas: spss, csv y excel. </p>
+                            <h3>Entrega de resultados</h3>
+                            <p>Al finalizar el estudios, los entregables están disponibles para ti en todos los formatos sin costos extra( .spss, .csv, .xlsx, .sql, incluso air table). </p>
                             <img src={arrow} alt="arrow" />
                         </div>
                     </Fade>
