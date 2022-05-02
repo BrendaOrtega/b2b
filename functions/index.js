@@ -15,8 +15,8 @@ const transport = nodemailer.createTransport({
 const sendContactForm = (form) => {
     return transport
         .sendMail({
-            subject: '👾🤖¡Tienes un nuevo mensaje!😎',
-            bcc: ['rflores@surveyup.com.mx', 'contacto@fixter.org', 'brenda@fixter.org'],
+            subject: '👾🤖Nuevo mensaje de SurveyUp business😎',
+            bcc: ['rflores@surveyup.com.mx', 'brenda@fixter.org'],
             html: `<h3>¡Tienes un nuevo mensaje!</h3>
 			<p> Nombre: ${form.name} </p>
             <p> empresa: ${form.company}  </p>
